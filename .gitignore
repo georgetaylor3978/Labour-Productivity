@@ -1,0 +1,18 @@
+﻿# Node
+node_modules/
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Temp / logs
+*.log
+*.tmp
+
+# Raw CSV data files — keep out of repo (large, refresh locally)
+GovtSuitsData.csv

@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labour Productivity Dashboard — Canada</title>
+<meta name="description" content="Interactive dashboard for Canadian labour productivity by industry, sector, and year. Data: Statistics Canada Table 36-10-0480-01.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="wizred.png" class="brand-logo" alt="WizRed">
+      <div class="brand-text">
+        <div class="brand-title">Labour Productivity</div>
+        <div class="brand-subtitle">Statistics Canada &mdash; Table 36-10-0480-01</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a class="source-link" id="sourceLink" href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610048001" target="_blank" rel="noopener">&#128279; Source Data</a>
+      <button class="btn-theme" id="themeToggle" onclick="toggleTheme()">&#9728; Light</button>
+    </div>
+  </div>
+</header>
+
+<!-- CONTROLS -->
+<section class="controls-bar">
+  <div class="controls-inner">
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Year From</span>
+      <input type="number" id="yearFrom" min="1997" max="2024" value="1997" step="1">
+    </div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Year To</span>
+      <input type="number" id="yearTo" min="1997" max="2024" value="2024" step="1">
+    </div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Sector</span>
+      <div class="select-wrap">
+        <select id="sectorFilter"><option value="">&#8249;All Sectors&#8250;</option></select>
+      </div>
+    </div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Sub-sector</span>
+      <div class="select-wrap">
+        <select id="subsectorFilter"><option value="">&#8249;All Sub-sectors&#8250;</option></select>
+      </div>
+    </div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Industry</span>
+      <div class="select-wrap">
+        <select id="industryFilter"><option value="">&#8249;All Industries&#8250;</option></select>
+      </div>
+    </div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">Search Industry</span>
+      <div class="search-wrap">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" id="searchBox" placeholder="Filter by industry name&hellip;">
+      </div>
+    </div>
+
+    <div class="ctrl-group">
+      <span class="ctrl-label">&nbsp;</span>
+      <button class="btn-reset" id="resetBtn">&#8634; Reset</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- KPI STRIP -->
+<div class="summary-strip" id="kpiStrip">
+  <div class="kpi-card gold">
+    <div class="kpi-icon">&#128200;</div>
+    <div class="kpi-body">
+      <div class="kpi-value" id="kpiAvgProd">-</div>
+      <div class="kpi-label">Avg Productivity ($/hr)</div>
+    </div>
+  </div>
+  <div class="kpi-card blue">
+    <div class="kpi-icon">&#127981;</div>
+    <div class="kpi-body">
+      <div class="kpi-value" id="kpiIndustries">-</div>
+      <div class="kpi-label">Industries</div>
+    </div>
+  </div>
+  <div class="kpi-card green">
+    <div class="kpi-icon">&#128197;</div>
+    <div class="kpi-body">
+      <div class="kpi-value" id="kpiYears">-</div>
+      <div class="kpi-label">Years Covered</div>
+    </div>
+  </div>
+  <div class="kpi-card purple">
+    <div class="kpi-icon">&#9650;</div>
+    <div class="kpi-body">
+      <div class="kpi-value" id="kpiHighest">-</div>
+      <div class="kpi-label">Highest Value ($/hr)</div>
+    </div>
+  </div>
+  <div class="kpi-card rose">
+    <div class="kpi-icon">&#9660;</div>
+    <div class="kpi-body">
+      <div class="kpi-value" id="kpiLowest">-</div>
+      <div class="kpi-label">Lowest Value ($/hr)</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHARTS + TABLES -->
+<div class="main-wrap">
+
+  <!-- Trend over time (full width) -->
+  <div class="chart-card full-width">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-title">Productivity Trend Over Time</div>
+        <div class="chart-subtitle">Chained (2017) dollars per hour &mdash; average across selected industries</div>
+      </div>
+      <div id="trendBadge"></div>
+    </div>
+    <div class="chart-container">
+      <canvas id="trendChart"></canvas>
+      <img src="wizred.png" class="chart-watermark" alt="">
+    </div>
+  </div>
+
+  <!-- Top 10 Industries by Latest Year -->
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-title">Top 10 Industries by Productivity</div>
+        <div class="chart-subtitle">Highest avg labour productivity in selected range</div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="top10Chart"></canvas>
+      <img src="wizred.png" class="chart-watermark" alt="">
+    </div>
+  </div>
+
+  <!-- Sector breakdown donut -->
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-title">Productivity by Sector</div>
+        <div class="chart-subtitle">Average $/hr across top sectors</div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="sectorChart"></canvas>
+      <img src="wizred.png" class="chart-watermark" alt="">
+    </div>
+  </div>
+
+  <!-- Year-over-year change -->
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-title">Year-over-Year Growth Rate</div>
+        <div class="chart-subtitle">Annual % change in average labour productivity</div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="yoyChart"></canvas>
+      <img src="wizred.png" class="chart-watermark" alt="">
+    </div>
+  </div>
+
+  <!-- Bottom 10 Industries -->
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-title">Bottom 10 Industries by Productivity</div>
+        <div class="chart-subtitle">Lowest avg labour productivity in selected range</div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="bottom10Chart"></canvas>
+      <img src="wizred.png" class="chart-watermark" alt="">
+    </div>
+  </div>
+
+  <!-- Top 10 Industries Table -->
+  <div class="table-card full-width">
+    <div class="table-header">
+      <div class="table-title">Industry Ranking &mdash; Detailed View</div>
+      <div class="table-count" id="rankCount"></div>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table" id="rankTable">
+        <thead>
+          <tr>
+            <th class="rank">#</th>
+            <th data-col="industry">Industry</th>
+            <th data-col="sector">Sector</th>
+            <th data-col="subsector">Sub-sector</th>
+            <th data-col="avgVal">Avg $/hr</th>
+            <th data-col="latestVal">Latest $/hr</th>
+            <th data-col="change">Change</th>
+            <th>Trend</th>
+          </tr>
+        </thead>
+        <tbody id="rankBody">
+          <tr><td colspan="8" class="no-data">Loading&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Annual Detail Table -->
+  <div class="table-card full-width">
+    <div class="table-header">
+      <div class="table-title">Annual Data Detail</div>
+      <div class="table-count" id="detailCount"></div>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table" id="detailTable">
+        <thead>
+          <tr>
+            <th data-col="year">Year</th>
+            <th data-col="sector">Sector</th>
+            <th data-col="subsector">Sub-sector</th>
+            <th data-col="industry">Industry</th>
+            <th data-col="value">Productivity ($/hr)</th>
+          </tr>
+        </thead>
+        <tbody id="detailBody">
+          <tr><td colspan="5" class="no-data">Loading&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination" id="detailPagination"></div>
+  </div>
+
+</div><!-- /main-wrap -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-copy">&copy; 2025 WizRed &mdash; Data: Statistics Canada</div>
+  <a class="footer-link" href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610048001" target="_blank" rel="noopener noreferrer">
+    Source: StatCan Table 36-10-0480-01 &mdash; Labour Productivity and Related Measures
+  </a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

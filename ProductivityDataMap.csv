@@ -1,0 +1,483 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Labour productivity and related measures by business sector industry and by non-commercial activity consistent with the industry accounts, inactive","36100480","383-0033","https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610048001",1;2,"ARCHIVED -  a cube publicly available but no longer being updated","Annual","1997-01-01","2024-01-01","3",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",,""
+"2","Labour productivity and related measures",,""
+"3","Industry",15,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Canada","[11124]","1","","",88,
+"1","Newfoundland and Labrador","[10]","2","1","",,
+"1","Prince Edward Island","[11]","3","1","",,
+"1","Nova Scotia","[12]","4","1","",,
+"1","New Brunswick","[13]","5","1","",,
+"1","Quebec","[24]","6","1","",,
+"1","Ontario","[35]","7","1","",,
+"1","Manitoba","[46]","8","1","",,
+"1","Saskatchewan","[47]","9","1","",,
+"1","Alberta","[48]","10","1","",,
+"1","British Columbia","[59]","11","1","",,
+"1","Yukon","[60]","12","1","",,
+"1","Northwest Territories including Nunavut","","13","1","",3,
+"1","Northwest Territories","[61]","14","1","",3,
+"1","Nunavut","[62]","15","1","",3,
+"2","Total number of jobs","","1","","",4,
+"2","Hours worked for all jobs","","2","","",5,
+"2","Annual average number of hours worked for all jobs","","3","","",6,
+"2","Total compensation for all jobs","","4","","",7,
+"2","Nominal value added","","5","","",8,
+"2","Real value added","","6","","",9,
+"2","Labour productivity","","7","","",10,
+"2","Total compensation per hour worked","","8","","",11,
+"2","Unit labour cost","","9","","",12,
+"2","Unit labour cost in US dollars","","10","","",13,
+"2","Labour share","","11","","",14,
+"3","All industries","","1","","",16,
+"3","All industries (except owner occupied dwellings)","","323","1","",89,
+"3","Business sector industries","","2","323","",17,
+"3","Goods-producing businesses","","3","2","",18,
+"3","Agriculture, forestry, fishing and hunting","[BS11]","4","3","",19,
+"3","Crop and animal production","[BS11A]","5","4","",20,
+"3","Crop production","[BS111]","6","5","",,
+"3","Greenhouse, nursery and floriculture production","[BS1114]","7","6","",90,
+"3","Crop production (except greenhouse, nursery and floriculture production)","[BS111A]","8","6","",21,
+"3","Animal production","[BS112]","9","5","",,
+"3","Aquaculture","[BS1125]","10","9","",,
+"3","Animal production (except aquaculture)","[BS112A]","11","9","",22,
+"3","Forestry and logging","[BS113]","12","4","",,
+"3","Fishing, hunting and trapping","[BS114]","13","4","",,
+"3","Support activities for agriculture and forestry","[BS115]","14","4","",,
+"3","Support activities for forestry","[BS1153]","15","14","",,
+"3","Support activities for crop and animal production","[BS115A]","16","14","",23,
+"3","Mining and oil and gas extraction","[BS21]","17","3","",,
+"3","Oil and gas extraction","[BS211]","18","17","",,
+"3","Conventional oil and gas extraction","[BS211113]","19","18","",,
+"3","Non-conventional oil extraction","[BS211114]","20","18","",,
+"3","Mining and quarrying (except oil and gas)","[BS212]","21","17","",,
+"3","Coal mining","[BS2121]","22","21","",,
+"3","Metal ore mining","[BS2122]","23","21","",,
+"3","Iron ore mining","[BS21221]","24","23","",,
+"3","Gold and silver ore mining","[BS21222]","25","23","",,
+"3","Copper, nickel, lead and zinc ore mining","[BS21223]","26","23","",,
+"3","Other metal ore mining","[BS21229]","27","23","",,
+"3","Non-metallic mineral mining and quarrying","[BS2123]","28","21","",,
+"3","Stone mining and quarrying","[BS21231]","29","28","",,
+"3","Sand, gravel, clay, and ceramic and refractory minerals mining and quarrying","[BS21232]","30","28","",,
+"3","Diamond mining","[BS212392]","31","28","",,
+"3","Potash mining","[BS212396]","32","28","",,
+"3","Other non-metallic mineral mining and quarrying (except diamond and potash)","[BS21239A]","33","28","",24,
+"3","Support activities for mining and oil and gas extraction","[BS213]","34","17","",,
+"3","Support activities for oil and gas extraction","[BS21311A]","35","34","",25,
+"3","Support activities for mining","[BS21311B]","36","34","",26,
+"3","Utilities","[BS22]","37","3","",,
+"3","Electric power generation, transmission and distribution","[BS2211]","38","37","",,
+"3","Natural gas distribution, water, sewage and other systems","[BS221A]","39","37","",27,
+"3","Natural gas distribution","[BS2212]","40","39","",,
+"3","Water, sewage and other systems","[BS2213]","41","39","",,
+"3","Construction","[BS23]","42","3","",,
+"3","Residential building construction","[BS23A]","43","42","",28,
+"3","Non-residential building construction","[BS23B]","44","42","",28,
+"3","Engineering construction","[BS23C]","45","42","",28,
+"3","Transportation engineering construction","[BS23C1]","46","45","",28,
+"3","Oil and gas engineering construction","[BS23C2]","47","45","",28,
+"3","Electric power engineering construction","[BS23C3]","48","45","",28,
+"3","Communication engineering construction","[BS23C4]","49","45","",28,
+"3","Other engineering construction","[BS23C5]","50","45","",28,
+"3","Repair construction","[BS23D]","51","42","",28,
+"3","Other activities of the construction industry","[BS23E]","52","42","",28,
+"3","Manufacturing","[BS3A]","53","3","",29,
+"3","Food manufacturing","[BS311]","54","53","",,
+"3","Animal food manufacturing","[BS3111]","55","54","",,
+"3","Sugar and confectionery product manufacturing","[BS3113]","56","54","",,
+"3","Fruit and vegetable preserving and specialty food manufacturing","[BS3114]","57","54","",,
+"3","Dairy product manufacturing","[BS3115]","58","54","",,
+"3","Meat product manufacturing","[BS3116]","59","54","",,
+"3","Seafood product preparation and packaging","[BS3117]","60","54","",,
+"3","Miscellaneous food manufacturing","[BS311A]","61","54","",30,
+"3","Grain and oilseed milling","[BS3112]","62","61","",,
+"3","Bakeries and tortilla manufacturing","[BS3118]","63","61","",,
+"3","Other food manufacturing","[BS3119]","64","61","",,
+"3","Beverage and tobacco product manufacturing","[BS312]","65","53","",,
+"3","Soft drink and ice manufacturing","[BS31211]","66","65","",,
+"3","Breweries","[BS31212]","67","65","",,
+"3","Wineries and distilleries","[BS3121A]","68","65","",31,
+"3","Tobacco manufacturing","[BS3122]","69","65","",,
+"3","Textile and textile product mills","[BS31A]","70","53","",32,
+"3","Clothing and leather and allied product manufacturing","[BS31B]","71","53","",33,
+"3","Wood product manufacturing","[BS321]","72","53","",,
+"3","Sawmills and wood preservation","[BS3211]","73","72","",,
+"3","Veneer, plywood and engineered wood product manufacturing","[BS3212]","74","72","",,
+"3","Other wood product manufacturing","[BS3219]","75","72","",,
+"3","Paper manufacturing","[BS322]","76","53","",,
+"3","Pulp, paper and paperboard mills","[BS3221]","77","76","",,
+"3","Converted paper product manufacturing","[BS3222]","78","76","",,
+"3","Printing and related support activities","[BS323]","79","53","",,
+"3","Petroleum and coal product manufacturing","[BS324]","80","53","",,
+"3","Petroleum refineries","[BS32411]","81","80","",,
+"3","Petroleum and coal products manufacturing (except petroleum refineries)","[BS3241A]","82","80","",34,
+"3","Chemical manufacturing","[BS325]","83","53","",,
+"3","Basic chemical manufacturing","[BS3251]","84","83","",,
+"3","Resin, synthetic rubber, and artificial and synthetic fibres and filaments manufacturing","[BS3252]","85","83","",,
+"3","Pesticide, fertilizer and other agricultural chemical manufacturing","[BS3253]","86","83","",,
+"3","Pharmaceutical and medicine manufacturing","[BS3254]","87","83","",,
+"3","Miscellaneous chemical product manufacturing","[BS325A]","88","83","",35,
+"3","Paint, coating and adhesive manufacturing","[BS3255]","89","88","",,
+"3","Soap, cleaning compound and toilet preparation manufacturing","[BS3256]","90","88","",,
+"3","Other chemical product manufacturing","[BS3259]","91","88","",,
+"3","Plastics and rubber products manufacturing","[BS326]","92","53","",,
+"3","Plastic product manufacturing","[BS3261]","93","92","",,
+"3","Rubber product manufacturing","[BS3262]","94","92","",,
+"3","Non-metallic mineral product manufacturing","[BS327]","95","53","",,
+"3","Cement and concrete product manufacturing","[BS3273]","96","95","",,
+"3","Non-metallic mineral product manufacturing (except cement and concrete products)","[BS327A]","97","95","",36,
+"3","Primary metal manufacturing","[BS331]","98","53","",,
+"3","Iron and steel mills and ferro-alloy manufacturing","[BS3311]","99","98","",,
+"3","Steel product manufacturing from purchased steel","[BS3312]","100","98","",,
+"3","Alumina and aluminum production and processing","[BS3313]","101","98","",,
+"3","Non-ferrous metal (except aluminum) production and processing","[BS3314]","102","98","",,
+"3","Foundries","[BS3315]","103","98","",,
+"3","Fabricated metal product manufacturing","[BS332]","104","53","",,
+"3","Forging and stamping","[BS3321]","105","104","",,
+"3","Architectural and structural metals manufacturing","[BS3323]","106","104","",,
+"3","Boiler, tank and shipping container manufacturing","[BS3324]","107","104","",,
+"3","Hardware manufacturing","[BS3325]","108","104","",,
+"3","Spring and wire product manufacturing","[BS3326]","109","104","",,
+"3","Machine shops, turned product, and screw, nut and bolt manufacturing","[BS3327]","110","104","",,
+"3","Coating, engraving, heat treating and allied activities","[BS3328]","111","104","",,
+"3","Cutlery, hand tools and other fabricated metal product manufacturing","[BS332A]","112","104","",37,
+"3","Machinery manufacturing","[BS333]","113","53","",,
+"3","Agricultural, construction and mining machinery manufacturing","[BS3331]","114","113","",,
+"3","Industrial, commercial and service industry machinery manufacturing","[BS333A]","115","113","",38,
+"3","Industrial machinery manufacturing","[BS3332]","116","115","",,
+"3","Commercial and service industry machinery manufacturing","[BS3333]","117","115","",,
+"3","Ventilation, heating, air-conditioning and commercial refrigeration equipment manufacturing","[BS3334]","118","113","",,
+"3","Metalworking machinery manufacturing","[BS3335]","119","113","",,
+"3","Engine, turbine and power transmission equipment manufacturing","[BS3336]","120","113","",,
+"3","Other general-purpose machinery manufacturing","[BS3339]","121","113","",,
+"3","Computer and electronic product manufacturing","[BS334]","122","53","",,
+"3","Computer and peripheral equipment manufacturing","[BS3341]","123","122","",,
+"3","Communications equipment manufacturing","[BS3342]","124","122","",,
+"3","Semiconductor and other electronic component manufacturing","[BS3344]","125","122","",,
+"3","Other electronic product manufacturing","[BS334A]","126","122","",39,
+"3","Electrical equipment, appliance and component manufacturing","[BS335]","127","53","",,
+"3","Electric lighting equipment manufacturing","[BS3351]","128","127","",,
+"3","Household appliance manufacturing","[BS3352]","129","127","",,
+"3","Electrical equipment manufacturing","[BS3353]","130","127","",,
+"3","Other electrical equipment and component manufacturing","[BS3359]","131","127","",,
+"3","Transportation equipment manufacturing","[BS336]","132","53","",,
+"3","Motor vehicle manufacturing","[BS3361]","133","132","",,
+"3","Automobile and light-duty motor vehicle manufacturing","[BS33611]","134","133","",,
+"3","Heavy-duty truck manufacturing","[BS33612]","135","133","",,
+"3","Motor vehicle body and trailer manufacturing","[BS3362]","136","132","",,
+"3","Motor vehicle parts manufacturing","[BS3363]","137","132","",,
+"3","Motor vehicle gasoline engine and engine parts manufacturing","[BS33631]","138","137","",,
+"3","Motor vehicle electrical and electronic equipment manufacturing","[BS33632]","139","137","",,
+"3","Motor vehicle steering and suspension components (except spring) manufacturing","[BS33633]","140","137","",,
+"3","Motor vehicle brake system manufacturing","[BS33634]","141","137","",,
+"3","Motor vehicle transmission and power train parts manufacturing","[BS33635]","142","137","",,
+"3","Motor vehicle seating and interior trim manufacturing","[BS33636]","143","137","",,
+"3","Motor vehicle metal stamping","[BS33637]","144","137","",,
+"3","Other motor vehicle parts manufacturing","[BS33639]","145","137","",,
+"3","Aerospace product and parts manufacturing","[BS3364]","146","132","",,
+"3","Railroad rolling stock manufacturing","[BS3365]","147","132","",,
+"3","Ship and boat building","[BS3366]","148","132","",,
+"3","Other transportation equipment manufacturing","[BS3369]","149","132","",,
+"3","Furniture and related product manufacturing","[BS337]","150","53","",,
+"3","Household and institutional furniture and kitchen cabinet manufacturing","[BS3371]","151","150","",,
+"3","Office furniture (including fixtures) manufacturing","[BS3372]","152","150","",,
+"3","Other furniture-related product manufacturing","[BS3379]","153","150","",,
+"3","Miscellaneous manufacturing","[BS339]","154","53","",,
+"3","Medical equipment and supplies manufacturing","[BS3391]","155","154","",,
+"3","Other miscellaneous manufacturing","[BS3399]","156","154","",,
+"3","Service-producing businesses","","157","2","",40,
+"3","Wholesale trade","[BS41]","158","157","",,
+"3","Farm product wholesaler-distributors","[BS411]","159","158","",,
+"3","Petroleum product wholesaler-distributors","[BS412]","160","158","",,
+"3","Food, beverage and tobacco wholesaler-distributors","[BS413]","161","158","",,
+"3","Personal and household goods wholesaler-distributors","[BS414]","162","158","",,
+"3","Motor vehicle and parts wholesaler-distributors","[BS415]","163","158","",,
+"3","Building material and supplies wholesaler-distributors","[BS416]","164","158","",,
+"3","Machinery, equipment and supplies wholesaler-distributors","[BS417]","165","158","",,
+"3","Miscellaneous wholesaler-distributors","[BS418]","166","158","",,
+"3","Wholesale electronic markets, and agents and brokers","[BS419]","167","158","",,
+"3","Retail trade","[BS4A]","168","157","",87,
+"3","Motor vehicle and parts dealers","[BS441]","169","168","",,
+"3","Furniture and home furnishings stores","[BS442]","170","168","",,
+"3","Electronics and appliance stores","[BS443]","171","168","",,
+"3","Building material and garden equipment and supplies dealers","[BS444]","172","168","",,
+"3","Food and beverage stores","[BS445]","173","168","",,
+"3","Health and personal care stores","[BS446]","174","168","",,
+"3","Gasoline stations","[BS447]","175","168","",,
+"3","Clothing and clothing accessories stores","[BS448]","176","168","",,
+"3","Sporting goods, hobby, book and music stores","[BS451]","177","168","",,
+"3","General merchandise stores","[BS452]","178","168","",,
+"3","Miscellaneous store retailers","[BS453]","179","168","",,
+"3","Non-store retailers","[BS454]","180","168","",,
+"3","Transportation and warehousing","[BS4B]","181","157","",,
+"3","Air transportation","[BS481]","182","181","",,
+"3","Rail transportation","[BS482]","183","181","",,
+"3","Water transportation","[BS483]","184","181","",,
+"3","Truck transportation","[BS484]","185","181","",,
+"3","Transit, ground passenger and scenic and sightseeing transportation","[BS48Z]","186","181","",41,
+"3","Urban transit systems","[BS4851]","187","186","",,
+"3","Taxi and limousine service","[BS4853]","188","186","",,
+"3","Other transit and ground passenger transportation and scenic and sightseeing transportation","[BS48A]","189","186","",42,
+"3","Support activities for transportation","[BS488]","190","181","",,
+"3","Pipeline transportation","[BS486]","191","181","",,
+"3","Pipeline transportation of natural gas","[BS4862]","192","191","",,
+"3","Crude oil and other pipeline transportation","[BS486A]","193","191","",43,
+"3","Postal service and couriers and messengers","[BS49A]","194","181","",44,
+"3","Postal service","[BS491]","195","194","",,
+"3","Couriers and messengers","[BS492]","196","194","",,
+"3","Warehousing and storage","[BS493]","197","181","",,
+"3","Information and cultural industries","[BS51]","198","157","",,
+"3","Publishing industries (except internet)","[BS511]","199","198","",,
+"3","Newspaper publishers","[BS51111]","200","199","",,
+"3","Periodical, book and directory publishers","[BS5111A]","201","199","",45,
+"3","Software publishers","[BS5112]","202","199","",,
+"3","Motion picture and sound recording industries","[BS512]","203","198","",,
+"3","Motion picture and video exhibition","[BS51213]","204","203","",,
+"3","Motion picture and video industries (except exhibition)","[BS5121A]","205","203","",46,
+"3","Sound recording industries","[BS5122]","206","203","",,
+"3","Broadcasting (except internet)","[BS515]","207","198","",,
+"3","Radio and television broadcasting","[BS5151]","208","207","",,
+"3","Pay and specialty television","[BS5152]","209","207","",,
+"3","Telecommunications","[BS517]","210","198","",,
+"3","Data processing, hosting, and related services","[BS518]","211","198","",,
+"3","Other information services","[BS519]","212","198","",,
+"3","Finance and insurance","[BS52]","214","157","",,
+"3","Depository credit intermediation and monetary authorities","[BS52B]","215","214","",48,
+"3","Monetary authorities - central bank","[BS521]","216","215","",,
+"3","Local credit unions","[BS52213]","217","215","",,
+"3","Banking and other depository credit intermediation","[BS5221A]","218","215","",49,
+"3","Non-depository credit intermediation","[BS5222]","219","214","",,
+"3","Activities related to credit intermediation","[BS5223]","220","214","",,
+"3","Insurance carriers and related activities","[BS524]","221","214","",,
+"3","Insurance carriers","[BS5241]","222","221","",,
+"3","Agencies, brokerages and other insurance related activities","[BS5242]","223","221","",,
+"3","Financial investment services, funds and other financial vehicles","[BS52A]","224","214","",50,
+"3","Real estate, rental and leasing","[BS53]","225","157","",51,
+"3","Real estate","[BS531]","226","225","",,
+"3","Lessors of real estate","[BS5311]","227","226","",,
+"3","Offices of real estate agents and brokers and activities related to real estate","[BS531A]","228","226","",52,
+"3","Rental and leasing services","[BS532]","229","225","",,
+"3","Automotive equipment rental and leasing","[BS5321]","230","229","",,
+"3","Rental and leasing services (except automotive equipment)","[BS532A]","231","229","",53,
+"3","Lessors of non-financial intangible assets (except copyrighted works)","[BS533]","232","225","",,
+"3","Professional, scientific and technical services","[BS54]","233","157","",,
+"3","Legal, accounting and related services","[BS541A]","234","233","",54,
+"3","Legal services","[BS5411]","235","234","",,
+"3","Accounting, tax preparation, bookkeeping and payroll services","[BS5412]","236","234","",,
+"3","Architectural, engineering and related services","[BS5413]","237","233","",,
+"3","Other professional, scientific and technical services including scientific research and development","[BS541B]","238","233","",55,
+"3","Specialized design services","[BS5414]","239","238","",,
+"3","Management, scientific and technical consulting services","[BS5416]","240","238","",,
+"3","Scientific research and development services","[BS5417]","241","238","",,
+"3","Other professional, scientific and technical services","[BS5419]","242","238","",,
+"3","Computer systems design and related services","[BS5415]","243","233","",,
+"3","Advertising, public relations, and related services","[BS5418]","244","233","",,
+"3","Holding companies","[BS551113]","245","157","",,
+"3","Administrative and support, waste management and remediation services","[BS56]","246","157","",,
+"3","Administrative and support services","[BS561]","247","246","",,
+"3","Office administrative services","[BS5611]","248","247","",,
+"3","Employment services","[BS5613]","249","247","",,
+"3","Business support services","[BS5614]","250","247","",,
+"3","Travel arrangement and reservation services","[BS5615]","251","247","",,
+"3","Investigation and security services","[BS5616]","252","247","",,
+"3","Services to buildings and dwellings","[BS5617]","253","247","",,
+"3","Facilities and other support services","[BS561A]","254","247","",56,
+"3","Waste management and remediation services","[BS562]","255","246","",,
+"3","Educational services","[BS61]","256","157","",,
+"3","Private educational services","[BS611A]","257","256","",57,
+"3","Health care and social assistance","[BS62]","258","157","",,
+"3","Health care","[BS62X]","259","258","",58,
+"3","Ambulatory health care services","[BS621]","260","259","",,
+"3","Offices of physicians","[BS6211]","261","260","",,
+"3","Offices of dentists","[BS6212]","262","260","",,
+"3","Miscellaneous ambulatory health care services","[BS621A]","263","260","",59,
+"3","Nursing and residential care facilities","[BS623]","264","259","",,
+"3","Social assistance","[BS624]","265","258","",,
+"3","Arts, entertainment and recreation","[BS71]","266","157","",,
+"3","Performing arts, spectator sports and related industries, and heritage institutions","[BS71A]","267","266","",60,
+"3","Amusement, gambling and recreation industries","[BS713]","268","266","",,
+"3","Gambling industries","[BS7132]","269","268","",,
+"3","Amusement and recreation industries","[BS713A]","270","268","",61,
+"3","Accommodation and food services","[BS72]","271","157","",,
+"3","Accommodation services","[BS721]","272","271","",,
+"3","Traveller accommodation","[BS7211]","273","272","",,
+"3","RV (recreational vehicle) parks, recreational camps, and rooming and boarding houses","[BS721A]","274","272","",62,
+"3","Food services and drinking places","[BS722]","275","271","",,
+"3","Other private services","[BS81]","276","157","",63,
+"3","Repair and maintenance","[BS811]","277","276","",,
+"3","Automotive repair and maintenance","[BS8111]","278","277","",,
+"3","Repair and maintenance (except automotive)","[BS811A]","279","277","",64,
+"3","Personal services and private households","[BS81A]","280","276","",65,
+"3","Personal and laundry services","[BS812]","281","280","",,
+"3","Funeral services","[BS8122]","282","281","",,
+"3","Dry cleaning and laundry services","[BS8123]","283","281","",,
+"3","Personal care services and other personal services","[BS812A]","284","281","",66,
+"3","Private households","[BS814]","285","280","",,
+"3","Professional and similar organizations","[BS813B]","286","276","",67,
+"3","Business sector industries, excluding farms","","287","323","",68,
+"3","Business sector industries, excluding private households","","288","323","",69,
+"3","Service-producing businesses, excluding private households","","289","323","",70,
+"3","Industrial production","","290","323","",71,
+"3","Non-durable manufacturing industries","","291","323","",72,
+"3","Durable manufacturing industries","","292","323","",73,
+"3","Energy sector","","293","323","",74,
+"3","Information and communication sector","","294","323","",75,
+"3","Information and communication technology, manufacturing","","295","294","",76,
+"3","Information and communication technology, services","","296","294","",77,
+"3","Finance and insurance, and holding companies","[BS5B]","213","323","",47,
+"3","Non-business sector industries","","297","323","",78,
+"3","Non-profit institutions serving households","[NP]","298","297","",,
+"3","Non-profit institutions","[NP0]","299","298","",,
+"3","Non-profit education institutions","[NP6100]","300","299","",,
+"3","Ambulatory health care services","[NP6210]","301","299","",,
+"3","Non-profit welfare organizations","[NP6240]","302","299","",,
+"3","Non-profit arts, entertainment and recreation","[NP7100]","303","299","",,
+"3","Grant-making, civic, and professional and similar organizations","[NP813A]","304","299","",,
+"3","Religious organizations","[NP8131]","305","299","",,
+"3","Other non-profit institutions serving households","[NPA000]","306","299","",,
+"3","Government sector","[GS00]","307","297","",,
+"3","Government educational services","[GS610]","308","307","",,
+"3","Elementary and secondary schools","[GS611100]","309","308","",79,
+"3","Community colleges and C.E.G.E.P.s","[GS611200]","310","308","",80,
+"3","Universities","[GS611300]","311","308","",,
+"3","Other educational services","[GS611A00]","312","308","",81,
+"3","Government health services","[GS620]","313","307","",82,
+"3","Hospitals","[GS622000]","314","313","",83,
+"3","Nursing and residential care facilities","[GS623000]","315","313","",,
+"3","Federal government services","[GS911]","316","307","",,
+"3","Federal government services (excluding defence)","[GS911A00]","317","316","",,
+"3","Defence services","[GS911100]","318","316","",84,
+"3","Provincial and territorial government services","[GS912]","319","307","",85,
+"3","Local, municipal and Indigenous government services","[GS91B]","320","307","",86,
+"3","Municipal government services","[GS913000]","321","320","",,
+"3","Indigenous government services","[GS914000]","322","320","",,
+"3","Owner-occupied dwellings","","324","1","",91,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"5103","Labour Productivity Measures - Provinces and Territories (Annual)"
+
+"Subject Code","Subject Name"
+"36","Economic accounts"
+
+"Note ID",Note
+1,"This table replaces tables 36-10-0214 and 36-10-0215, which are now archived. For concepts, methods and sources, see http://www.statcan.gc.ca/imdb-bmdi/5103-eng.htm. Data by industry included in this table correspond to the Canadian System of Macroeconomic Accounts input-output detailed level of aggregation. The table is built around the Input-Output Industry Classification (IOIC). This one identifies both Institutional Sectors and Industries based on the North American Industry Classification System (NAICS). The alphanumeric codes appearing in square brackets besides each industry title represent the IOIC identification code. The first two characters of the IOIC alphanumeric codes represent the sector. IOIC codes beginning with a BS represent Business Sector industries, codes beginning with an NP represent Non-Profit Institutions Serving Household (NPISH) Sector industries, and codes beginning with a GS represent Government Sector industries. The IOIC is a hierarchical classification. IOIC codes consisting of four alpha-numeric characters represent industries at the Summary (S) level of aggregation, IOIC codes consisting of five or six alpha-numeric characters represent industries at the Medium (M) and IOIC codes consisting of eight alpha-numeric characters represent industries at the Detailed (D) level of aggregation. The classifications of the Input-Output tables can be found at the following link http://www.statcan.gc.ca/nea-cen/hr2012-rh2012/data-donnees/aggregation-agregation/aggregation-agregation-eng.htm."
+2,"Provincial and territorial data are available from 1997."
+3,"For Northwest Territories including Nunavut, statistics are available until 1998 inclusively. Starting in 1999, data for Northwest Territories and Nunavut are presented separately."
+4,"The estimate of the total number of jobs covers two main categories: employee jobs and self-employed jobs."
+5,"The number of hours worked in all jobs is the annual average for all jobs times the annual average hours worked in all jobs. According to the retained definition, hours worked means the total number of hours that a person spends working, whether paid or not. In general, this includes regular and overtime hours, breaks, travel time, training in the workplace and time lost, in brief, work stoppages where workers remain at their posts. On the other hand, time lost due to strikes, lockouts, annual vacation, public holidays, sick leave, maternity leave or leave for personal needs are not included in total hours worked."
+6,"This is the annual average of hours worked per job in all categories of jobs."
+7,"The total compensation for all jobs consists of all payments in cash or in kind made by domestic producers to workers for services rendered. It includes wages and salaries and employer's social contributions of employees, plus an imputed labour income for self-employed workers."
+8,"For a given industry, value added is equal to its gross production (mainly sales) less its intermediate consumption (energy, raw materials, services) stemming from other industries. The value added corresponds to Gross domestic product (GDP) at basic prices which corresponds to the GDP at market prices excluding net taxes on products."
+9,"Real value added is evaluated in 2017 chained dollars. A double-deflation procedure is used to measure real value added: real intermediate inputs are subtracted from real gross output. For productivity measurement, a real value added Fisher chain index is used for each industry. Chain indexes are calculated for consecutive periods to determine variation of quantities from one period to another. The chain indexes offer the advantage of reducing the variation in the values recorded by the various fixed-base indexes."
+10,"Labour productivity is the ratio between real value added and hours worked. Real value added for each industry and each aggregate is constructed from a Fisher chain index."
+11,"The ratio between total compensation for all jobs, and the number of hours worked. The term "hourly compensation" is often used to refer to the total compensation per hour worked."
+12,"This is the labour cost per unit of output, and it equals labour compensation divided by real value added. It is also equal to the ratio of labour compensation per hour worked and labour productivity. Unit labour cost increases when labour compensation per hour worked increases more rapidly than labour productivity. It is widely used to measure long-term inflation pressures arising from wage growth."
+13,"This is the unit labour cost expressed in US dollars. This is obtained by dividing the unit labour cost by the exchange rate between Canada and the United States."
+14,"Labour share corresponds to the ratio of total compensation as a percentage to the nominal value added."
+15,"The North American Industry Classification System (NAICS) is an industry classification system triggered by the North American Free Trade Agreement, that was developed by the statistical agencies of Canada, Mexico and the United States. It is designed to provide common definitions of the industrial structure of the three countries and a common statistical framework to facilitate the analysis of the three economies. NAICS is based on supply side or production oriented principles, to ensure that industrial data, classified to NAICS, is suitable for the analysis of production related issues such as industrial performance. Since 1997, the industry classification system of the Canadian System of Macroeconomic Accounts input-output tables is based on NAICS. In the Macroeconomic Accounts industries, the levels of the different classification systems were chosen so as to provide the most detail possible in order to maximize continuity with the previous classification systems developed by Statistics Canada since 1961. For more details, see http://www.statcan.gc.ca/imdb-bmdi/5103-eng.htm."
+16,"Total economic activities that have been realized within the country. This includes both business and non-business sectors."
+17,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 11-81, with the exception of owner occupied dwellings industry."
+18,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 11, 21, 22, 23, 31-33."
+19,"This combines the business establishments of the North American Industry Classification System (NAICS) code 11. Starting in 2014, the crop production industry incorporates the activities related to cannabis."
+20,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 111, 112."
+21,"This combines the business establishments for the North American Industry Classification System (NAICS) code 111 excluding 1114. Starting in 2014, the crop production industry incorporates the activities related to illegal cannabis."
+22,"This combines the business establishments for the North American Industry Classification System (NAICS) code 112, excluding 1125"
+23,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 1151, 1152."
+24,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 212393, 212394, 212395, 212397, 212398."
+25,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 213111, 213118."
+26,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 213117, 213119."
+27,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 2212, 2213."
+28,"Special hybrid: corresponds to sections of the North American Industry Classification System (NAICS) code 23."
+29,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 311-316, 321-327, 331-337, 339."
+30,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 3112, 3118, 3119."
+31,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 31213, 31214."
+32,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 313, 314."
+33,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 315, 316."
+34,"This combines the business establishments for the North American Industry Classification System (NAICS) code 324, excluding 32411."
+35,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 3255, 3256, 3259."
+36,"This combines the business establishments for the North American Industry Classification System (NAICS) code 327, excluding 3273."
+37,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 3322, 3329."
+38,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 3332, 3333."
+39,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 3343, 3345, 3346."
+40,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 41, 44-45, 48-49, 51, 52, 53, 54, 55, 56, 61, 62, 71, 72, 81 with the exception of owner occupied dwelling industry."
+41,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 485, 487."
+42,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 4852, 4854, 4855, 4859, 487."
+43,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 4861, 4869."
+44,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 491, 492."
+45,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 51112, 51113, 51114, 51119."
+46,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 51211, 51212, 51219."
+47,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 52 and 55."
+48,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 521, 5221."
+49,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 52211, 52219."
+50,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 523, 526."
+51,"This combines the business establishments for the North American Industry Classification System (NAICS) code 53. However, it differs from the Input-Output code BS53 since it excludes the industry of owner-occupied dwellings (BS5311A)."
+52,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 5312, 5313."
+53,"This combines the business establishments for the North American Industry Classification System (NAICS) code 532, excluding 5321."
+54,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 5411, 5412."
+55,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 5414, 5416, 5417, 5419."
+56,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 5612, 5619."
+57,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 6114-6117."
+58,"This combines the business establishments for the North American Industry Classification System (NAICS) code 62, excluding 624."
+59,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 6213, 6214, 6215, 6216, 6219."
+60,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 711, 712."
+61,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 7131, 7139."
+62,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 7212, 7213."
+63,"This combines the commercial establishments of the North American Industry Classification System (NAICS) code 81."
+64,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 8112, 8113, 8114."
+65,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 812, 814."
+66,"This combines the business establishments for the North American Industry Classification System (NAICS) codes 8121, 8129."
+67,"This combines the business establishments for the North American Industry Classification System (NAICS) code 813, excluding 8131."
+68,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 11-81, with the exception of owner occupied dwellings industry, crop production (111), animal production (112)."
+69,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 11-81, with the exception of owner occupied dwellings industry and private households."
+70,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 41, 44-45, 48-49, 51, 52, 53, 54, 55, 56, 61, 62, 71, 72, 81 with the exception of owner occupied dwelling industry and private households."
+71,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 21, 22, 31-33 and 562."
+72,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 311-316, 322-326."
+73,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 321, 327, 331-337, 339."
+74,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 211, 2121, 212291, 21311A, 2211, 2212, 32411, 486."
+75,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 4173, 5112, 517, 518, 5415, 8112 as well as 334, excluding 3345."
+76,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 334, excluding 3345."
+77,"This combines the business establishments of the North American Industry Classification System (NAICS) codes 4173, 5112, 517, 518, 5415 and 8112."
+78,"This combines the non-commercial activities of two main components: the government sector (GS) and the non-profit institutions serving households sector (NP)."
+79,"Starting from 2013, elementary and secondary schools include only schools under school boards management while before, schools managed directly by provincial or federal governments are also included."
+80,"Starting from 2013, Community colleges and C.E.G.E.P.s include only colleges under provincial jurisdiction while before, colleges under federal jurisdiction are also included."
+81,"Starting from 2013, these other education establishments include only establishments  under provincial jurisdiction while before, federal or municipal establishments are also included."
+82,"Prior to 2013, government health services exclude "other government health services" (NAICS codes 624 and part of 621), while these services are included for the period thereafter."
+83,"Prior to 2013, hospitals exclude "other government health services" (NAICS codes 624 and part of 621), while these services are included for the period thereafter. By contrast, beginning in 2013, only hospitals under the management of regional health authority are included while previously, hospitals under provincial or federal management are also included."
+84,"Starting from 2013, defence services include military colleges while before, these colleges are excluded."
+85,"Prior to 2013, provincial and territorial government services include "other government health services" (NAICS codes 624 and part of 621), while these services are excluded for the period thereafter."
+86,"This combines local, municipal and indigenous general government activities."
+87,"Starting in 2014, the miscellaneous store retailers industry incorporates the activities related to cannabis."
+88,"Estimates of labour statistics associated with the geographic entity "Outside Canada" are not included in this table, but are included in the national estimates. They are published in another table (Table 36-10-0489-01).  As a result, the totals for Canada in this table do not correspond to the sum of its provinces and territories."
+89,"All economic activities realized within the country for business and non-business activities, but excluding the owner-occupied dwellings industry. There is no data on the number of hours worked by homeowners to maintain their dwellings. By subtracting this activity from the gross domestic product (GDP), we can produce a better estimate of productivity for the total economy, by harmonizing the measurement of hours worked with that of GDP."
+90,"Starting in 2014, this industry incorporates the activities related to legal cannabis."
+91,"This is an industry excluded from the business sector. There is no market transactions for imputed rental values based on residential property information."
+
+"Correction ID","Correction Date","Correction Note"
+"1268","2020-08-25","On August 25, 2020, corrections were mainly made to the labour data series for the industries at a North American Industry Classification System (NAICS) 4-digit level of aggregation from 2018 to 2019. Territorial and provincial estimates for the total economy, business sector and non-business sector, estimates for 2 and 3-digit NAICS industries, and industrial aggregations, as well as data for years prior to 2018 were not affected.",
+"2336","2021-05-27","On May 27, 2021, corrections were mainly made to the compensation of employees series (including its related measures)  for the industries at a North American Industry Classification System (NAICS) 2-, 3-, 4-, 5-, and 6-digit level of aggregation for the year 2020. The related measures are total compensation for all jobs, total compensation per job, total compensation per hour worked, employee's compensation per hour worked unit labour cost, unit labour cost in US dollars, and labour share. Corrections were also made to growth rates for these variables in the goods-producing businesses and the service-producing businesses. Territorial and provincial estimates for the total economy, business sector and non-business sector, estimates for labour productivity and the 5 other related variables (including hours worked and real value added) at the aggregate and industry levels, as well as data for years prior to 2020 were not affected.",
+"3954","2025-06-13","On June 13, 2025, the data for all 3-digit North American Industry Classification System (NAICS) industries within the retail trade sector (NAICS 44 and 45) for years 2022 to 2024 were suppressed due to a premature conversion from NAICS 2017 to NAICS 2022.",
+"3964","2025-07-07","On July 7, 2025, data on self-employed labour income in the health industry for reference year 2024 and related measures were updated to correct for a modelling discrepancy. There were no impacts on other measures, including jobs, hours and labour productivity.",
+"3975","2025-07-28","On July 28, 2025, the labour share in the non-business sector (in particular, the non-profit institutions serving households component) was updated for the period from 1997 to 2017. This update aimed to subtract the GDP of owner-occupied dwellings from the calculation of the labour share in these sectors.",
+
